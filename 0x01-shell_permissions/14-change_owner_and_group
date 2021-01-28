@@ -1,2 +1,2 @@
 #!/bin/bash
-chown --from=Betty:holberton 
+chown Betty:holberton *
