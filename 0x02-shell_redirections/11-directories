@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -not -type d | wc -l
+find . */ -type d | wc -l
