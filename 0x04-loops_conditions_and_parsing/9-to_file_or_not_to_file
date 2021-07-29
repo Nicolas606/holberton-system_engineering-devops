@@ -1,19 +1,20 @@
 #!/usr/bin/env bash
 # This script that gives you information about the holbertonschool file_name.
-file_name ="holbertonschool"
-if [ -e "file_name" ]
+
+f_name="holbertonschool"
+if [ -e "$f_name" ]
 then
-	echo "holbertonschool file_name exists"
-	if [ -s "file_name" ]
+	echo "holbertonschool f_name exists"
+	if [ -s "$f_name" ]
 	then
-		echo "holbertonschool file_name is not empty"
+		echo "holbertonschool f_name is not empty"
 	else
-		echo "holbertonschool file_name is empty"
+		echo "holbertonschool f_name is empty"
 	fi
-	if [ -f "file_name" ]
+	if [ -f "$f_name" ]
 	then
-		echo "holbertonschool is a regular file_name"
+		echo "holbertonschool is a regular f_name"
 	fi
 else
-	echo "holbertonschool file_name does not exist"
+	echo "holbertonschool f_name does not exist"
 fi

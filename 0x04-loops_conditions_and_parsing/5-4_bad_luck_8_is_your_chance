@@ -3,19 +3,16 @@
 # displays bad luck for the 4th loop iteration
 # displays good luck for the 8th loop iteration
 # displays Holberton School for the other iterations
-number=1
-while [ $number -le 10 ]
+number=0
+while ((number++ < 10))
 do
-    if [ $number = 4 ]
-        then
-        echo "bad luck"
-        number=$(($number+1))
-    elif [ $number = 8 ]
-        then
-        echo "good luck"
-        number=$(($number+1))
+    if [ "$number" -eq 4 ]
+    then
+        echo 'bad luck'
+    elif [ "$number" -eq 8 ]
+    then
+        echo 'good luck'
     else
-        echo "Holberton School"
-        number=$(($number+1))
+        echo 'Holberton School'
     fi
 done
