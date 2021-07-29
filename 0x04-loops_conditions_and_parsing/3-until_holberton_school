@@ -3,5 +3,5 @@
 number=10
 until  ((number-- <= 0))
 do
-    echo "Holberton School $number"
+    echo "Holberton School"
 done
