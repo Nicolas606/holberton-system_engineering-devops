@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script that gives you information about the holbertonschool file_name.
+# This script that gives you information about the file_name.
 
 f_name="holbertonschool"
 if [ -e "$f_name" ]
@@ -13,7 +13,7 @@ then
 	fi
 	if [ -f "$f_name" ]
 	then
-		echo "holbertonschool is a regular f_name"
+		echo "holbertonschool is a regular file"
 	fi
 else
 	echo "holbertonschool file does not exist"
