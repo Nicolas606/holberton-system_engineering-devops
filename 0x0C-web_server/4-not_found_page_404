@@ -9,5 +9,5 @@ sed -i "/$match/a\\$other_page" /etc/nginx/sites-available/default
 
 echo "Ceci n'est pas une page" > /var/www/html/error404.html
 other_page2="\n\terror_page 404 /error404.html;\n"
-sed -i "/$match/a\\$new" /etc/nginx/sites-available/default
+sed -i "/$match/a\\$other_page2" /etc/nginx/sites-available/default
 sudo service nginx restart
