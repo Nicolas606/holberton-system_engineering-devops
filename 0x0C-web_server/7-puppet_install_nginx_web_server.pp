@@ -1,5 +1,6 @@
 # Installs nginx web server using puppet
-package {'Install nginx':
+
+package { 'nginx':
   ensure => installed,
   name   => 'nginx',
 }
