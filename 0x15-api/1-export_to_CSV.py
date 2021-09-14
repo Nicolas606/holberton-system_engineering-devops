@@ -15,11 +15,15 @@ if __name__ == '__main__':
     data_todos = response.json()
     response.close()
 
-with open(user_id + '.csv', mode='w') as file:
-    for task in data_todos:
-        file.write('"{}","{}","{}","{}"\n'.format(
+    data_csv = ''
+    for dictionary in data_todos:
+        data_csv += '"{}","{}","{}","{}"\n'.format(
             data_user.get('id'),
             data_user.get('username'),
-            task.get('completed'),
-            task.get('title')
-        ))
+            dictionary.get('completed'),
+            dictionary.get('title')
+        )
+
+
+    with open(user_id +'.csv', 'w') as file:
+        file.write(data_csv)
