@@ -8,7 +8,7 @@ if __name__ == '__main__':
     https = 'https://jsonplaceholder.typicode.com/'
     response = requests.get("{}users".format(https))
     data_user = response.json()
-    response = requests.get("{}todos".format(https))
+    response = requests.get("{}users/todos".format(https))
     data_todos = response.json()
 
     dictionary = {}
