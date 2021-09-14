@@ -28,4 +28,4 @@ if __name__ == '__main__':
         tasks_count,
         len(data_todos))
     )
-    print(tasks)
+    print(tasks, end='')
