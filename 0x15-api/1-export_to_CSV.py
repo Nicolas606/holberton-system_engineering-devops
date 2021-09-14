@@ -24,6 +24,5 @@ if __name__ == '__main__':
             dictionary.get('title')
         )
 
-
-    with open(user_id +'.csv', 'w') as file:
+    with open(user_id + '.csv', 'w') as file:
         file.write(data_csv)
