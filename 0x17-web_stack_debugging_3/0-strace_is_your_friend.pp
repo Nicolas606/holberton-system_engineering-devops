@@ -1,5 +1,5 @@
-# 0. Strace is your friend
+# Fix type
 exec  { 'replace':
-    command  => 'sed -i "s/.phpp/.php/" /var/www/html/wp-settings.php',
+    command  => 'sudo sed -i "s/.phpp/.php/" /var/www/html/wp-settings.php',
     provider => '/bin'
 }
